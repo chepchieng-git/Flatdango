@@ -1,18 +1,18 @@
 # Flatdango
-###Author
+### Author
 Wycliffe Chepchieng
 
 
 This web Flatdango App is a simple movie theater web app that allows users to book tickets and display the total tickets sold and the capacity per movie.
 
-##Setup
+## Setup
 To get the server running, the command below code is typed in the console.
 
 json-server --watch db.json
 
 Testing to make sure the server works can be done by copying and pasting http://localhost:3000/films in a new tap in a browser.
 
-##Deliverables
+## Deliverables
 The following movie's details are seen when the page loads;
 Poster, Title, Runtime, Showtime, and available tickets.
 
