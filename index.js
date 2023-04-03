@@ -33,9 +33,9 @@ function renderFilms(movieObj) {
     let card = document.createElement('li')
         card.className = 'card'
         card.innerHTML = `
-        <img src="${movieObj.poster}">
+        <img id="img" src="${movieObj.poster}">
         <div class = "content">
-        <p>Available Tickets: <span class="ticket-count">${movieObj.tickets_sold}</span></p>
+        <p><strong>Tickets Sold: </strong><span class="ticket-count">${movieObj.tickets_sold}</span></p>
         <p>${movieObj.description}</p>
         </div>
         <div class = "buttons">
@@ -56,6 +56,10 @@ function renderFilms(movieObj) {
            } else {
             alert ("Sorry, tickets are sold out")
            }
+        })
+        const img = card.querySelector('#img')
+        img.addEventListener('click', function () {
+            `${movieObj.description}`
         })
 
 }
