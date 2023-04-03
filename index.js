@@ -35,9 +35,7 @@ function renderFilms(movieObj) {
         card.innerHTML = `
         <img src="${movieObj.poster}">
         <div class = "content">
-        <p>
-            Available Tickets: <span class="ticket-count">${movieObj.tickets_sold}</span>
-        </p>
+        <p>Available Tickets: <span class="ticket-count">${movieObj.tickets_sold}</span></p>
         <p>${movieObj.description}</p>
         </div>
         <div class = "buttons">
@@ -49,11 +47,15 @@ function renderFilms(movieObj) {
         
         const buyTicket = card.querySelector('#buy-ticket')
         buyTicket.addEventListener('click', function() {
+           if (movieObj.tickets_sold < movieObj.capacity) {
             movieObj.tickets_sold += 1;
 
-        //update display of movie tickets sold
-        const ticketCount = card.querySelector('.ticket-count')
-        ticketCount.textContent = movie.tickets_sold
+            //update display of movie tickets sold
+            const ticketCount = card.querySelector('.ticket-count')
+            ticketCount.textContent = movieObj.tickets_sold
+           } else {
+            alert ("Sorry, tickets are sold out")
+           }
         })
 
 }
