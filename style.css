@@ -8,7 +8,7 @@
     display: flex;
     flex-flow: column;
     margin-top: 20px;
-    width: 300px;
+    width: 70%;
     height: 400px;
     flex-direction: row;
     border-radius: 10px;
@@ -21,7 +21,6 @@
     display: flex;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     background-color: #eee6e2;
@@ -30,6 +29,7 @@ ul.film-list {
     background-color: rgb(44, 116, 179);
     margin-left: 20%;
     margin-right: 20%;
+    border-radius: 10px;
 }
 
 img {
@@ -72,6 +72,11 @@ h1 {
     font-weight: bold;
     background: #0a2572;
     color: #fff;
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+    background: #f1f3f7;
 }
 
 div.content {
@@ -81,6 +86,7 @@ div.content {
     border-style:outset;
     border-color: #eee6e2;
     border-radius: 10px;
+    margin-left: 20px;
 }
 
 button#buy-ticket {

@@ -37,6 +37,8 @@ function renderFilms(movieObj) {
         <div class = "content">
         <p><strong>Tickets Sold: </strong><span class="ticket-count">${movieObj.tickets_sold}</span></p>
         <p>${movieObj.description}</p>
+        <p><strong>Capacity: ${movieObj.capacity}</strong></p>
+
         </div>
         <div class = "buttons">
             <button id="buy-ticket">Buy Ticket</button>
