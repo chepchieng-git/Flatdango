@@ -61,7 +61,7 @@ li.card button {
     padding: 10px 20px;
 }
 
-button:hover {
+#buy-ticket:hover {
     background: #0a2572;
     color: #f5f5f7;
 }
