@@ -33,16 +33,14 @@ function renderFilms(movieObj) {
     let card = document.createElement('li')
         card.className = 'card'
         card.innerHTML = `
-        <p id="title"><strong>Title: ${movieObj.title}</strong></p>
         <img id="img" src="${movieObj.poster}">
+        <p id="title"><strong>Title: ${movieObj.title}</strong></p>
         <div class = "content">
-        <p>${movieObj.description}</p>
-        <p><strong>Tickets Sold: </strong><span class="ticket-count">${movieObj.tickets_sold}</span></p>
-        <p><strong>Capacity: ${movieObj.capacity}</strong></p>
-        <p><strong>Showtime: ${movieObj.showtime}</strong></p>
-        <p><strong>Runtime: ${movieObj.runtime}</strong></p>
-    
-
+            <p>${movieObj.description}</p>
+            <p><strong>Tickets Sold: </strong><span class="ticket-count">${movieObj.tickets_sold}</span></p>
+            <p><strong>Capacity: ${movieObj.capacity}</strong></p>
+            <p><strong>Showtime: ${movieObj.showtime}</strong></p>
+            <p><strong>Runtime: ${movieObj.runtime}</strong></p>
         </div>
         <div class = "buttons">
             <button id="buy-ticket">Buy Ticket</button>

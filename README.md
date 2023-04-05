@@ -1,6 +1,6 @@
 # Flatdango
 ### Author
-Wycliffe Chepchieng
+    Wycliffe Chepchieng
 
 
 This web Flatdango App is a simple movie theater web app that allows users to book tickets and display the total tickets sold and the capacity per movie.
