@@ -50,7 +50,7 @@ body .nav{
     margin-bottom: 12px;
 }
 
-button {
+li.card button {
     font-size: 14px; 
     font-weight: 600;
     text-transform: uppercase;
@@ -58,10 +58,7 @@ button {
     color: #000;
     background-color: #cdd2e7;
     border-radius: 40px 40px 40px 40px;
-    padding: 15px 50px;
-    right: 0;
-    bottom: 0;
-
+    padding: 10px 20px;
 }
 
 button:hover {
@@ -69,11 +66,8 @@ button:hover {
     color: #f5f5f7;
 }
 
-button#buy-ticket {
-    margin-left: 10px;
-}
 span.ticket-count {
-    color: rgb(228, 13, 77);
+    color: #bb0b0b;
 }
 p#title {
     padding-right: 20px;
